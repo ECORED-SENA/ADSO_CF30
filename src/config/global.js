@@ -1,8 +1,8 @@
 export default {
   global: {
-    componenteFormativo: 'Construcción de aplicaciones con JAVA',
+    componenteFormativo: 'Construcción de aplicaciones con Java',
     descripcionCurso:
-      'Mediante el estudio de este componente, el aprendiz estará capacitado para procesar y aplicar conceptos sobre lenguajes de programación, formularios HTML, elementos de JSP, Java, programación orientada a objetos, entre otros. En el mismo sentido, potenciará sus habilidades para la construcción de aplicaciones con Java y construcción de aplicaciones web básicas.',
+      'Mediante el estudio de este componente, el aprendiz estará capacitado para procesar y aplicar conceptos sobre lenguajes de programación, formularios HTML, elementos de JSP, Java, programación orientada a objetos, entre otros. En el mismo sentido, potenciará sus habilidades para la construcción de aplicaciones con Java y construcción de aplicaciones <em>web</em> básicas.',
     imagenBannerPrincipal: require('@/assets/curso/banner-principal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/fondo-banner.svg'),
   },
@@ -29,7 +29,7 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Clases e interfaces JAVA',
+            titulo: 'Clases e interfaces Java',
             hash: 't_1_1',
           },
           {
@@ -161,12 +161,12 @@ export default {
     },
     {
       termino: 'JDK',
-      significado: 'Kit de Desarrollo de Java permite. ',
+      significado: ' Java Development Kit (Kit de Desarrollo de Java).',
     },
     {
       termino: 'URL',
       significado:
-        'Sus siglas (Localizador uniforme de recursos) facilita la recuperación de información determinada en internet se escribe en el navegador para ingresar a una página determinada.',
+        'Sus siglas (Localizador Uniforme de Recursos) facilita la recuperación de información determinada en internet se escribe en el navegador para ingresar a una página determinada.',
     },
   ],
   /*complementario: [
@@ -200,13 +200,19 @@ export default {
       {
         nombre: 'Fabián Leonardo Correa Díaz',
         cargo: 'Diseñador instruccional',
-        centro: 'Centro agropecuario La Granja, Regional Tolima',
+        centro: 'Centro agropecuario La Granja - Regional Tolima',
       },
       {
         nombre: 'Ana Catalina Córdoba Sus',
         cargo: 'Revisora metodológica y pedagógica',
         centro:
-          'Regional Distrito Capital – Centro para la Industria de la Comunicación Gráfica.',
+          'Centro para la Industria de la Comunicación Gráfica - Regional Distrito Capital',
+      },
+      {
+        nombre: 'Jhon Jairo Rodríguez Pérez',
+        cargo: 'Diseñador y evaluador instruccional',
+        centro:
+          'Centro para la Industria de la Comunicación Gráfica - Regional Distrito Capital ',
       },
     ],
     desarrolloProducto: [
@@ -249,13 +255,13 @@ export default {
         cargo: 'Producción audiovisual',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
-      },
+      },*/
       {
-        nombre: '',
+        nombre: 'Jhana Johanna Bustillo Ardila',
         cargo: 'Validación de diseño y contenido',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
-      },*/
+      },
     ],
     gestoresRepositorio: [
       {

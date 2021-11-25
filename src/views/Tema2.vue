@@ -25,7 +25,7 @@
         figure
           img.mx-auto(src="@/assets/curso/tema2/img1.svg", alt="imagen ambiental", style="width: 499px")
 
-    p.mb-4 Un ejemplo sencillo de lo que se puede hacer con JSP y Servlet es que por medio de una página JSP se consigue hacer un formulario que contenga una serie de datos como: primer nombre, segundo nombre, edad, correo y, a través de un <em>servlet</em>, realizar el envío de estos registros para que sean almacenados en una base de datos y que, finalmente, el usuario pueda visualizar esta información.
+    p.mb-4 Un ejemplo sencillo de lo que se puede hacer con JSP y <em>Servlet</em> es que por medio de una página JSP se consigue hacer un formulario que contenga una serie de datos como: primer nombre, segundo nombre, edad, correo y, a través de un <em>servlet</em>, realizar el envío de estos registros para que sean almacenados en una base de datos y que, finalmente, el usuario pueda visualizar esta información.
     p.mb-5 A continuación se pueden conocer los procesos principales de estas tecnologías y algunos aspectos generales del uso de JSP y <em>Servlet</em>:
 
     .row.justify-content-center.mb-5
@@ -56,7 +56,7 @@
                 b &lt;html&gt; 
                 b-none con extensión 
                 b .jsp 
-                b-none Estos archivos deben ser guardados en la carpeta del contenido web del servidor. El código JSP inicia con 
+                b-none Estos archivos deben ser guardados en la carpeta del contenido <em>web</em> del servidor. El código JSP inicia con 
                 b  &lt;%   %&gt;.
                 
             .col-10.col-md-5.order-1.order-lg-2.mb-4.mb-lg-0
@@ -75,7 +75,7 @@
           .row.justify-content-around.align-items-center
             .col-md-6.order-2.order-lg-1
               h4 <em>Software</em> requerido
-              p.mb-0 El software que se necesita para trabajar con JSP y <em>Servlets</em> es: 
+              p.mb-0 El <em>software</em> que se necesita para trabajar con JSP y <em>Servlets</em> es: 
                 b Java JEE IDE 
                 b-none (<em>NetBeans</em>, <em>Eclipse</em>), y el Servidor <em>Web </em>(<em>Tomcat</em>).
                   
@@ -90,7 +90,7 @@
                 b JDK 
                 b-none (Kit de desarrollo De Java), instalar 
                 b IDE Netbeans 
-                b-none en https://netbeans.apache.org/download/index.html, instalar Tomcat: Servidor de Aplicaciones, que es un <em>software</em> de código abierto; una vez terminada la configuración de las herramientas se inicia la introducción al tema de los <em>servlets</em>.
+                b-none en <a style="color: blue;" href="https://netbeans.apache.org/download/index.html" target="_blank">https://netbeans.apache.org/download/index.html</a>, instalar Tomcat: Servidor de Aplicaciones, que es un <em>software</em> de código abierto; una vez terminada la configuración de las herramientas se inicia la introducción al tema de los <em>servlets</em>.
                   
             .col-10.col-md-5.order-1.order-lg-2.mb-4.mb-lg-0
               figure
@@ -100,9 +100,9 @@
     p.mb-4 Hacer uso de los enlaces que se le ofrecen a continuación, para profundizar en lo relacionado con tecnologías <em>Servlet</em> y JSP:
 
     .row.justify-content-around.align-items-center.mb-5.p-5(style='background-color: #F3F9FF;')
-      .col-10.col-lg-3.mb-4.mb-lg-0
+      .col-11.col-lg-3.mb-4.mb-lg-0
         figure
-          img.m-auto(src='@/assets/curso/tema2/img8.svg', alt='imagen ambiental', style='width: 275px')
+          img.m-auto(src='@/assets/curso/tema2/img8.svg', alt='imagen ambiental', style='width: 312px')
           
       .col-lg-4
         
@@ -134,7 +134,7 @@
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-6.mb-4.mb-lg-0
         p.mb-4 <em>Servlet</em> es un programa que se lleva a cabo en una aplicación o servidor <em>Web</em>; se emplea como capa que intercede entre la base de datos y el servidor de peticiones HTTP, por medio de un navegador <em>Web</em> o cualquier otro cliente HTTP (Gómez, 2017).
-        p.mb-5 A continuación, se pueden conocer algunas ventajas de utilizar servlet:
+        p.mb-5 A continuación, se pueden conocer algunas ventajas de utilizar <em>servlet</em>:
         ul.lista-ul.mb-0
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
@@ -152,11 +152,11 @@
             
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
-            p.mb-0 Creíble: resguarda los recursos del servidor debido a el servidor de seguridad de java.
+            p.mb-0 Creíble: resguarda los recursos del servidor debido a el servidor de seguridad de Java.
             
       .col-11.col-lg-6
         .titulo-quinto.color-acento-contenido.mb-4
-          h4 Arquitectura de un servlet
+          h5 Arquitectura de un <em>servlet</em>
           
         figure
           img.m-auto(src='@/assets/curso/tema2/img9.svg', alt='imagen ambiental', style='width: 530px;')
@@ -164,11 +164,11 @@
 
     .row.justify-content-center.mb-5.py-4(style='background-color: #F3F9FF;')
       .col-lg-10
-        h4.text-center.mb-4 Las tareas principales de un servlet son:
+        h3.text-center.mb-4 Las tareas principales de un <em>servlet</em> son:
         LineaTiempoB.color-secundario.mb-5(:datos="datosLineaTiempoB")
 
 
-    h4.mb-4 Ciclo de vida de un <em>Servlet </em>
+    h4.mb-4 Ciclo de vida de un <em>Servlet</em>
       
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-6.mb-4.mb-lg-0
@@ -176,8 +176,9 @@
           b <em>main (), </em>
           b-none en los <em>servlets</em> son “llamados” unos métodos, al recibir peticiones. A esta metodología se le llama ciclo de vida de un <em>servlet</em> y se compone por tres métodos: 
           b <em>init, service, destroy</em>.
+          
         .titulo-quinto.color-acento-contenido
-          p.mb-0 Ciclo de vida de un <em>Servlets</em>
+          h5.mb-0 Ciclo de vida de un <em>Servlets</em>
           
         figure
           img.m-auto(src='@/assets/curso/tema2/img10.svg', alt='imagen ambiental', style='width: 600px;')
@@ -187,10 +188,10 @@
           img.m-auto(src='@/assets/curso/tema2/img11.svg', alt='imagen ambiental', style='width: 520px;')
 
 
-    p.mb-4 Se puede explorar el recurso que se muestra a continuación para conocer el ciclo de vida de un Servlet; procurar llevar registro, en la libreta personal de apuntes, de los aspectos más importantes y destacados.
+    p.mb-4 Se puede explorar el recurso que se muestra a continuación para conocer el ciclo de vida de un <em>Servlet</em>; procurar llevar registro, en la libreta personal de apuntes, de los aspectos más importantes y destacados.
 
-    p.mb-4 Ejemplo de 
-      b <em>Servlet</em>
+    p.mb-4 
+      b Ejemplo de <em>Servlet</em>
     
     p.mb-4 El siguiente código muestra un 
       b Hola Mundo 
@@ -212,6 +213,7 @@
         .p-5
           .row.justify-content-center
             .col-lg-10
+              p.mb-4 En el código anterior se hace lo siguiente:
               ul.lista-ul.mb-0
                 li 
                   i.fas.fa-layer-group.pe-4(style='color: #039BE5')
@@ -256,10 +258,10 @@
             .col
               .row.justify-content-between.align-items-center
                 .col.col-lg-8.mb-3.mb-sm-0
-                  h3.mb-1.text-white VideoServlet
+                  h3.mb-1.text-white Video <em>servlet</em>
                   p.mb-0.text-white Visualice el vídeo que se propone para ahondar en los aspectos más importantes de este punto:
                 .col-sm-auto
-                  a.boton.color-acento-contenido(href="https://www.youtube.com/watch?v=2L91WMqw96A" target="_blank")
+                  a.boton.color-acento-contenido(href="https://www.youtube.com/watch?v=KxP2sJwCGXw" target="_blank")
                     span #[strong Ver]
                     i.fas.fa-link
 
@@ -284,7 +286,7 @@
 
     figure.mb-5
       .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/2NfNxqeKGU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
     separador
@@ -356,7 +358,7 @@
             .floatRight.pb-5.justify-content-center
               p.pe-3.mb-0.text-white 
                 b &lt;%HttpSession variable =request.getSession(); %&gt;
-              //i.fas.fa-square.cac(style='color: #FFA726')
+              i.fas.fa-square.cac(style='color: #FFA726')
               
       .col-10.col-lg-6.order-1.order-lg-1.mb-4.mb-lg-0
         figure
@@ -512,7 +514,7 @@
 
     figure.mb-4
       .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/Exf3CGjyZzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
 
 
@@ -526,7 +528,7 @@
         .bg--verdoso.neg--left
           p.mb-0 El MVC (Modelo-Vista-Controlador) es un patrón de diseño estándar que se usa a la hora de crear aplicaciones dinámicas con 
             b Java. 
-            b-none Consiste en separar la parte lógica de los proyectos de la parte visual y lo hace integrando <em>Servlets</em> y <em>JSP</em> donde los Servlets se encargan de la parte lógica y los <em>JSP</em> de la parte visual.
+            b-none Consiste en separar la parte lógica de los proyectos de la parte visual y lo hace integrando <em>Servlets</em> y <em>JSP</em> donde los <em>Servlets</em> se encargan de la parte lógica y los <em>JSP</em> de la parte visual.
             
       .col-lg-6.order-1.order-lg-2
         figure
@@ -537,6 +539,10 @@
       .py-3.py-md-4(titulo="División de la aplicación que realiza el patrón")
         .row
           .col-md-12
+            .row
+              .col-auto
+                .titulo-sexto.color-acento-botones
+                  span #[strong Arquitectura MVC]
             figure
               img.m-auto(src='@/assets/curso/tema2/img20.svg', alt='Arquitectura MVC')
               
@@ -544,22 +550,22 @@
       .py-3.py-md-4(titulo="Patrón modelo-vista-controlador")
         .row.justify-content-center.align-items-center
           .col-md-6.order-2.order-lg-1
-            .tarjeta-numerada.color-acento-contenido.p-5.mb-4
+            .tarjeta-numerada.color-acento-contenido.p-4.ps-5.pb-0.mb-4(style="border-bottom: 0")
               .tarjeta-numerada__numero
                 .h2.text-white 1
-              h4 El Modelo
+              h4 El modelo
               p.mb-0 Realiza el almacenamiento y la manipulación de los datos.
               
-            .tarjeta-numerada.color-acento-contenido.p-5.mb-4
+            .tarjeta-numerada.color-acento-contenido.p-4.ps-5.pb-0.mb-4(style="border-bottom: 0")
               .tarjeta-numerada__numero
                 .h2.text-white 2
-              h4 La Vista
+              h4 La vista
               p.mb-0 Se encarga de la presentación con la que el usuario realizará la interacción, habitualmente en HTML.
               
-            .tarjeta-numerada.color-acento-contenido.p-5.mb-4
+            .tarjeta-numerada.color-acento-contenido.p-4.ps-5.pb-0.mb-4(style="border-bottom: 0")
               .tarjeta-numerada__numero
                 .h2.text-white 3
-              h4 EL Controlador
+              h4 EL controlador
               p.mb-0 Recoge los datos de entrada que envía el usuario, realiza la solicitud de acciones al modelo y modera la vista.
               
           .col-md-6.order-1.order-lg-2.mb-4.mb-lg-0
@@ -583,33 +589,33 @@ export default {
     // variables de vue
     datosLineaTiempoB: [
       {
-        titulo: 'Datos de transmisión',
+        titulo: '<h5>Datos de transmisión</h5>',
         texto:
           'Se encarga de leer claramente los datos de transmisión de un cliente(navegador), incluyendo un formulario HTML.',
         icono: require('@/assets/curso/tema2/icon1.svg'),
       },
       {
-        titulo: 'Remisión de peticiones http',
+        titulo: '<h5>Remisión de peticiones http</h5>',
         texto:
           'Remite una petición HTTP de los datos contenidos en el navegador incluyendo <em>cookies</em>.',
         icono: require('@/assets/curso/tema2/icon2.svg'),
       },
       {
-        titulo: 'Tratamiento de datos',
+        titulo: '<h5>Tratamiento de datos</h5>',
         texto:
           'Trata los datos y produce resultados accediendo a la base de datos.',
         icono: require('@/assets/curso/tema2/icon3.svg'),
       },
       {
-        titulo: 'Envío de documentos',
+        titulo: '<h5>Envío de documentos</h5>',
         texto:
           'Envía documentos al cliente (navegador), los cuales pueden ser de varios tipos como textos, binarios, etc.',
         icono: require('@/assets/curso/tema2/icon4.svg'),
       },
       {
-        titulo: 'Envíos de respuesta',
+        titulo: '<h5>Envíos de respuesta</h5>',
         texto:
-          'Realiza Envíos de respuesta HTTP implícita al cliente (navegador).',
+          'Realiza envíos de respuesta HTTP implícita al cliente (navegador).',
         icono: require('@/assets/curso/tema2/icon5.svg'),
       },
     ],

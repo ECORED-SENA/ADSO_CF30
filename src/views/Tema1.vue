@@ -11,7 +11,7 @@
     figure.mb-5(data-aos='fade-left')
       img(src="@/assets/curso/tema1/img1.jpg", alt="imagen ambiental", style='').m-auto
 
-    p.mb-5 Cuando se habla de JDBC (<em>Java Data Base Connectivity</em>) se hace referencia a un <em>Driver</em> que encapsula un conjunto de clases e interfaces escritas de JAVA, creadas para establecer conexiones, enviar sentencias SQL y procesar los datos resultantes sobre bases de datos relacionales, ver figura 1.
+    p.mb-5 Cuando se habla de JDBC (<em>Java Data Base Connectivity</em>) se hace referencia a un <em>Driver</em> que encapsula un conjunto de clases e interfaces escritas de Java, creadas para establecer conexiones, enviar sentencias SQL y procesar los datos resultantes sobre bases de datos relacionales, ver figura 1.
 
     .row.justify-content-center.align-items-center.mb-5
       .titulo-sexto.color-acento-contenido.mb-4
@@ -21,7 +21,7 @@
         figure.mb-4.mb-lg-0(data-aos='fade-right')
           img(src="@/assets/curso/tema1/img2.svg", alt="Java con JDBC", style='width: 540px;').m-auto
       .col-lg-6
-        p.mb-4 En términos más generales, JDBC es uno de los puentes que puede ser usado en JAVA para comunicar una aplicación JAVA con un servidor de bases de datos relacionales.
+        p.mb-4 En términos más generales, JDBC es uno de los puentes que puede ser usado en Java para comunicar una aplicación Java con un servidor de bases de datos relacionales.
         p.mb-4 Trabajar conexiones a bases de datos con JDBC implica realizar, cuidadosamente, acciones como las que se enuncian a continuación, ver tabla 1:
         ul.lista-ul.mb-0
           li 
@@ -50,7 +50,7 @@
               img.m-auto(src='@/assets/curso/tema1/img3.svg', alt='icono ambiental', style='width: 200px')
           
         h3.text-center Tenga presente 
-        p.text-center.px-lg-5 Cada sistema gestor de base de datos (SGBD) provee su propio JDBC para la manipulación de sus sistemas con las aplicaciones JAVA. Dependiendo de la base de datos a las que se desee conectar, se debe hacer la descarga del driver JDBC correspondiente. 
+        p.text-center.px-lg-5 Cada sistema gestor de base de datos (SGBD) provee su propio JDBC para la manipulación de sus sistemas con las aplicaciones Java. Dependiendo de la base de datos a las que se desee conectar, se debe hacer la descarga del <em>driver</em> JDBC correspondiente. 
       
       
       .col-md.tarjeta.color-primario.text-white.p-5(style='background-color: #1565C0;')
@@ -60,7 +60,7 @@
               img.m-auto(src='@/assets/curso/tema1/img4.svg', alt='icono ambiental', style='width: 200px')
           
         h3.text-center Importante
-        p.text-center.px-lg-5 Esta tabla muestra las direcciones oficiales para la descarga del Driver JDBC, para las bases de datos relaciones más utilizadas, comúnmente, en la industria del Software.
+        p.text-center.px-lg-5 Esta tabla muestra las direcciones oficiales para la descarga del <em>Driver</em> JDBC, para las bases de datos relaciones más utilizadas, comúnmente, en la industria del <em>Software</em>.
 
     .row.justify-content-center.align-items-center.mb-5
       .titulo-sexto.color-acento-botones.mb-4
@@ -132,7 +132,7 @@
 
 
     #t_1_1.titulo-segundo.color-acento-contenido
-      .h2 1.1 Clases e interfaces JAVA
+      .h2 1.1 Clases e interfaces Java
 
 
     .row.justify-content-center.align-items-center.mb-5.pb-lg-5
@@ -161,7 +161,7 @@
               
           .tarjeta.color-verdoso.p-3(x="22%" y="19%" numero="")
             .h5.mb-2 <em>DriverManager</em>
-            p.mb-0 Clase estática que permite la gestión del driver JDBC disponible para la aplicación. Por medio del método <em>getConnection</em> crea una instancia de tipo <em>Connection</em> mediante la cual se realiza el flujo de envío y recibo de información, hacia y desde la base de datos destino.
+            p.mb-0 Clase estática que permite la gestión del <em>driver</em> JDBC disponible para la aplicación. Por medio del método <em>getConnection</em> crea una instancia de tipo <em>Connection</em> mediante la cual se realiza el flujo de envío y recibo de información, hacia y desde la base de datos destino.
             
           .tarjeta.color-verdoso.p-3(x="22.5%" y="42%" numero="")
             .h5.mb-2 <em>Connection</em>
@@ -188,9 +188,10 @@
               img(src="@/assets/curso/tema1/icon1.svg")
             .col
               .row.justify-content-between.align-items-center
-                .col.col-lg-8.mb-3.mb-sm-0
-                  h3.mb-1.text-white Anexo 1 - Clases e interfaces Java
-                  p.mb-0.text-white Para profundizar y conocer los elementos más importantes de las clases e interfaces Java más usadas, se debe visitar el siguiente anexo
+                .col.col-lg-9.mb-3.mb-sm-0
+                  p.mb-0.text-white  Para profundizar y conocer los elementos más importantes de las clases e interfaces Java más usadas, se debe visitar el anexo 
+                    b Clases e interfaces Java
+                    b-none , disponible en el siguiente enlace:
                 .col-sm-auto
                   a.boton.color-acento-contenido(:href="obtenerLink('/downloads/Anexo1clases.pdf')" target="_blank")
                     span Descargar
@@ -204,7 +205,9 @@
   
 
 
-    p.mb-4 Garantizar la conexión a una base de datos requiere la aplicación concreta de los pasos ya explicados. En este punto, se debe tomar nota de ellos y registrar en su libreta personal de apuntes, las acciones que permiten cumplirlos (explicados en el anexo 1).
+    p.mb-4 Garantizar la conexión a una base de datos requiere la aplicación concreta de los pasos ya explicados. En este punto, se debe tomar nota de ellos y registrar en su libreta personal de apuntes, las acciones que permiten cumplirlos (explicados en el anexo: 
+      b Clases e interfaces Java
+      b-none ).
 
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-6.order-2.order-lg-1
@@ -213,12 +216,12 @@
           li 
             .lista-ol--cuadro__vineta
               span #[strong 1]
-            p.mb-0 Descarga del driver JDBC (Si no se tiene).
+            p.mb-0 Descarga del <em>driver</em> JDBC (Si no se tiene).
               
           li 
             .lista-ol--cuadro__vineta
               span #[strong 2]
-            p.mb-0 Importar el <em>Driver</em> descargado en las librerías del proyecto JAVA.
+            p.mb-0 Importar el <em>Driver</em> descargado en las librerías del proyecto Java.
               
           li 
             .lista-ol--cuadro__vineta
@@ -254,11 +257,11 @@
         figure.mb-4.mb-lg-0(data-aos="fade-left")
           img(src='@/assets/curso/tema1/img7.svg', alt='Texto que describa la imagen', style='width:520px;').m-auto
 
-    p.mb-4 Para afianzar en los conocimientos logrados hasta este punto, se debe visualizar el vídeo que se propone a continuación. En este se realiza un ejemplo sencillo y se presentan las prácticas de cada paso descrito.
+    p.mb-4 Para afianzar los conocimientos logrados hasta este punto, se debe visualizar el vídeo que se propone a continuación. En este se realiza un ejemplo sencillo y se presentan las prácticas de cada paso descrito.
     
     figure.mb-0
       .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/NeEC83DeAC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       
 
 

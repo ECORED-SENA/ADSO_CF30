@@ -9,7 +9,7 @@
           i.fas.fa-info.text-white
       h1 Introducción
     
-    p.mb-5 Se da la bienvenida al estudio de este componente del tecnólogo en análisis y desarrollo de software; para comenzar, es necesario explorar el recurso que se muestra a continuación:
+    p.mb-5 Se da la bienvenida al estudio de este componente del tecnólogo en análisis y desarrollo de <em>software</em>; para comenzar, es necesario explorar el recurso que se muestra a continuación:
   
     figure.mb-5
       .video
