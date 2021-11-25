@@ -106,19 +106,19 @@
           
       .col-lg-4
         
-        a.anexo.mb-5(href="https://www.oracle.com/java/technologies/downloads/" target="_blank")
+        a.anexo.anexo-fondo.mb-5(href="https://www.oracle.com/java/technologies/downloads/" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-link.svg")
           .anexo__texto
             p.mb-0 Enlace para descargar JDK (Kit de desarrollo De Java) 
         
-        a.anexo.mb-5(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+        a.anexo.anexo-fondo.mb-5(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-pdf.svg")
           .anexo__texto
             p.mb-0 Instalación de <em>Tomcat</em>
           
-        a.anexo.mb-0(href="https://tomcat.apache.org/" target="_blank")
+        a.anexo.anexo-fondo.mb-0(href="https://tomcat.apache.org/" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-link.svg")
           .anexo__texto
@@ -200,13 +200,13 @@
     .row.justify-content-center.align-items-center.py-5.px-4(style='background-color: #12263F; border-radius: 30px;')
       .col-lg-6
         figure(data-aos='fade-right')
-          img.m-auto(src='@/assets/curso/tema2/img11.svg', alt='imagen ambiental', style='width: 440px;')
+          img.m-auto(src='@/assets/curso/tema2/img12.svg', alt='imagen ambiental', style='width: 440px;')
           
       .col-lg-6
         figure(data-aos='fade-left')
           img.m-auto(src='@/assets/curso/tema2/img12.png', alt='imagen ambiental', style='width: 590px;')
         
-        
+    
     .row.justify-content-center.mb-5
       .col-lg-10(style='background-color: #DEE4F0; border-radius: 30px;')
         .p-5
@@ -373,7 +373,7 @@
           ImagenInfografica.color-primario.mb-5
             template(v-slot:imagen)
               figure
-                img(src='@/assets/curso/tema2/infografia1.svg', alt='funcionamiento básico de las sesiones')
+                img(src='@/assets/curso/tema2/infografia1.png', alt='funcionamiento básico de las sesiones')
                 
             .tarjeta.color-verdoso.p-3(x="13.6%" y="4%" numero="")
               p.mb-0 Cada uno de estos tres usuarios accede al archivo JSP, el cual crea un objeto 

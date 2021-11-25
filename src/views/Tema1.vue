@@ -67,10 +67,10 @@
         span #[strong Tabla 1] <em>Drivers </em> JDBC para SGBD
         
       .col-lg-6.mb-4.mb-lg-0
-        .tabla-b.color-acento-contenido.mb-5
+        .tabla-b.color-acento-botones.mb-5
           table(style="min-width: 600px;")
             thead
-              tr.text-white(style= "background-color: #FFA726;")
+              tr.text-white(style= "background-color: #ff4a69;")
                 td(style='width: 24%')
                   b Base de Datos
                 td 
