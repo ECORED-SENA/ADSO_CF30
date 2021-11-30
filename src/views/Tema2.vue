@@ -148,7 +148,7 @@
             
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
-            p.mb-0 Ya que los <<em>servlet</em> están escritos en Java los hace una plataforma independiente.
+            p.mb-0 Ya que los <em>servlet</em> están escritos en Java los hace una plataforma independiente.
             
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
@@ -168,27 +168,45 @@
         LineaTiempoB.color-secundario.mb-5(:datos="datosLineaTiempoB")
 
 
-    h4.mb-4 Ciclo de vida de un <em>Servlet</em>
       
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-6.mb-4.mb-lg-0
-        p.mb-4 A diferencia de las clases en Java, que inician con un método 
+    .row.justify-content-center.mb-5(style='background-color: #F3F9FF;')
+      .col-lg-6.mb-4.mb-lg-0.pt-4
+        h4.mb-4 Ciclo de vida de un <em>Servlet</em>
+        p.mb-0 A diferencia de las clases en Java, que inician con un método 
           b <em>main (), </em>
           b-none en los <em>servlets</em> son “llamados” unos métodos, al recibir peticiones. A esta metodología se le llama ciclo de vida de un <em>servlet</em> y se compone por tres métodos: 
           b <em>init, service, destroy</em>.
           
-        .titulo-quinto.color-acento-contenido
-          h5.mb-0 Ciclo de vida de un <em>Servlets</em>
-          
-        figure
-          img.m-auto(src='@/assets/curso/tema2/img10.svg', alt='imagen ambiental', style='width: 600px;')
-          
       .col-10.col-lg-6
         figure
-          img.m-auto(src='@/assets/curso/tema2/img11.svg', alt='imagen ambiental', style='width: 520px;')
+          img.m-auto(src='@/assets/curso/tema2/img10.svg', alt='imagen ambiental', style='width: 520px;')
 
 
-    p.mb-4 Se puede explorar el recurso que se muestra a continuación para conocer el ciclo de vida de un <em>Servlet</em>; procurar llevar registro, en la libreta personal de apuntes, de los aspectos más importantes y destacados.
+    p.mb-5 Se puede explorar el recurso que se muestra a continuación para conocer el ciclo de vida de un <em>Servlet</em>; procurar llevar registro, en la libreta personal de apuntes, de los aspectos más importantes y destacados.
+
+    .row.justify-content-center.mb-5
+      .col-lg-10
+        .titulo-quinto.color-acento-contenido.mb-4
+          h5.mb-0 Ciclo de vida de un <em>Servlets</em>
+              
+        
+        ImagenInfografica.color-primario.mb-4
+          template(v-slot:imagen)
+            figure
+              img(src='@/assets/curso/tema2/infografia2.svg', alt='Ciclo de vida de un Servlets')
+              
+              
+          .tarjeta.color-verdoso.p-3(x="44%" y="25%" numero="")
+            p.mb-0 El servlet inicia por medio de una llamada al método init (). Este método está definido para ser llamado una sola vez, cuando el servlet es invocado se crea una instancia del servlet generando un hilo nuevo de cada solicitud. 
+              
+          .tarjeta.color-verdoso.p-3(x="44%" y="60%" numero="")
+            p.mb-0 En segundo lugar, es llamado el método de servicio para hacer la gestión de la solicitud del cliente. La función del método service es atender las peticiones get y post de los clientes; cuando se realiza el llamado a este método, invoca a doGet () y doPost (), dependiendo del caso que sea.
+              
+          .tarjeta.color-verdoso.p-3(x="44%" y="85%" numero="")
+            p.mb-0 Por último se llama al método destroy para finalizar el Servlet. Como su nombre lo indica, se encarga al destruir el servlet sobrescribiendo el método destroy ().
+              
+
+
 
     p.mb-4 
       b Ejemplo de <em>Servlet</em>
