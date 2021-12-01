@@ -112,7 +112,7 @@
           .anexo__texto
             p.mb-0 Enlace para descargar JDK (Kit de desarrollo De Java) 
         
-        a.anexo.anexo-fondo.mb-5(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+        a.anexo.anexo-fondo.mb-5(:href="obtenerLink('/downloads/Anexo_2.pdf')" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-pdf.svg")
           .anexo__texto
