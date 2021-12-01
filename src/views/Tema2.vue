@@ -197,13 +197,13 @@
               
               
           .tarjeta.color-verdoso.p-3(x="44%" y="25%" numero="")
-            p.mb-0 El servlet inicia por medio de una llamada al método init (). Este método está definido para ser llamado una sola vez, cuando el servlet es invocado se crea una instancia del servlet generando un hilo nuevo de cada solicitud. 
+            p.mb-0 El <em>servlet</em> inicia por medio de una llamada al método <em>init</em> (). Este método está definido para ser llamado una sola vez, cuando el <em>servlet</em> es invocado se crea una instancia del <em>servlet</em> generando un hilo nuevo de cada solicitud. 
               
           .tarjeta.color-verdoso.p-3(x="44%" y="60%" numero="")
-            p.mb-0 En segundo lugar, es llamado el método de servicio para hacer la gestión de la solicitud del cliente. La función del método service es atender las peticiones get y post de los clientes; cuando se realiza el llamado a este método, invoca a doGet () y doPost (), dependiendo del caso que sea.
+            p.mb-0 En segundo lugar, es llamado el método de servicio para hacer la gestión de la solicitud del cliente. La función del método <em>service</em> es atender las peticiones <em>get</em> y <em>post</em> de los clientes; cuando se realiza el llamado a este método, invoca a <em>doGet</em> () y <em>doPost</em> (), dependiendo del caso que sea.
               
           .tarjeta.color-verdoso.p-3(x="44%" y="85%" numero="")
-            p.mb-0 Por último se llama al método destroy para finalizar el Servlet. Como su nombre lo indica, se encarga al destruir el servlet sobrescribiendo el método destroy ().
+            p.mb-0 Por último se llama al método <em>destroy</em> para finalizar el <em>Servlet</em>. Como su nombre lo indica, se encarga al destruir el <em>servlet</em> sobrescribiendo el método <em>destroy</em> ().
               
 
 
