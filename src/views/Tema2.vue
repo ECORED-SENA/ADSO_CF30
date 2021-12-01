@@ -196,13 +196,13 @@
               img(src='@/assets/curso/tema2/infografia2.svg', alt='Ciclo de vida de un Servlets')
               
               
-          .tarjeta.color-verdoso.p-3(x="44%" y="25%" numero="")
+          .tarjeta.color-verdoso2.p-3(x="47%" y="25%" numero="1")
             p.mb-0 El <em>servlet</em> inicia por medio de una llamada al método <em>init</em> (). Este método está definido para ser llamado una sola vez, cuando el <em>servlet</em> es invocado se crea una instancia del <em>servlet</em> generando un hilo nuevo de cada solicitud. 
               
-          .tarjeta.color-verdoso.p-3(x="44%" y="60%" numero="")
+          .tarjeta.color-verdoso2.p-3(x="47%" y="52%" numero="2")
             p.mb-0 En segundo lugar, es llamado el método de servicio para hacer la gestión de la solicitud del cliente. La función del método <em>service</em> es atender las peticiones <em>get</em> y <em>post</em> de los clientes; cuando se realiza el llamado a este método, invoca a <em>doGet</em> () y <em>doPost</em> (), dependiendo del caso que sea.
               
-          .tarjeta.color-verdoso.p-3(x="44%" y="85%" numero="")
+          .tarjeta.color-verdoso2.p-3(x="47%" y="85%" numero="3")
             p.mb-0 Por último se llama al método <em>destroy</em> para finalizar el <em>Servlet</em>. Como su nombre lo indica, se encarga al destruir el <em>servlet</em> sobrescribiendo el método <em>destroy</em> ().
               
 
