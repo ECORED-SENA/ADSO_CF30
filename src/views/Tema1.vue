@@ -85,7 +85,7 @@
                     .anexo__icono
                       img(src="@/assets/template/icono-link.svg")
                     .anexo__texto
-                      p.mb-0(style='color: #12263F') MySQL Community
+                      p.mb-0(style='color: #12263F') #[span.italic MySQL Community]
               tr
                 td 
                   b SQL Server
@@ -95,7 +95,7 @@
                     .anexo__icono
                       img(src="@/assets/template/icono-link.svg")
                     .anexo__texto
-                      p.mb-0(style='color: #12263F') Microsoft JDBC Driver for SQL Server
+                      p.mb-0(style='color: #12263F') #[span.italic Microsoft JDBC Driver for SQL Server]
               tr
                 td 
                   b Oracle
@@ -105,7 +105,7 @@
                     .anexo__icono
                       img(src="@/assets/template/icono-link.svg")
                     .anexo__texto
-                      p.mb-0(style='color: #12263F') Oracle Database
+                      p.mb-0(style='color: #12263F') #[span.italic Oracle Database]
               tr
                 td 
                   b PostgreSQL
@@ -193,7 +193,7 @@
                     b Clases e interfaces Java
                     b-none , disponible en el siguiente enlace:
                 .col-sm-auto
-                  a.boton.color-acento-contenido(:href="obtenerLink('/downloads/Anexo1clases.pdf')" target="_blank")
+                  a.boton.color-acento-contenido(:href="obtenerLink('/downloads/Anexo1_Clases.pdf')" target="_blank")
                     span Descargar
                     i.fas.fa-file-download
 
@@ -216,7 +216,7 @@
           li 
             .lista-ol--cuadro__vineta
               span #[strong 1]
-            p.mb-0 Descarga del <em>driver</em> JDBC (Si no se tiene).
+            p.mb-0 Descarga del <em>Driver</em> JDBC (Si no se tiene).
               
           li 
             .lista-ol--cuadro__vineta

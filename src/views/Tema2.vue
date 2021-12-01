@@ -112,7 +112,7 @@
           .anexo__texto
             p.mb-0 Enlace para descargar JDK (Kit de desarrollo De Java) 
         
-        a.anexo.anexo-fondo.mb-5(:href="obtenerLink('/downloads/Anexo_2.pdf')" target="_blank")
+        a.anexo.anexo-fondo.mb-5(:href="obtenerLink('/downloads/Anexo_2_Tomcat.pdf')" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-pdf.svg")
           .anexo__texto
@@ -235,7 +235,7 @@
               ul.lista-ul.mb-0
                 li 
                   i.fas.fa-layer-group.pe-4(style='color: #039BE5')
-                  p.mb-0 Se crea la clase
+                  p.mb-0 Se crea la clase 
                     b HolaMundo 
                     b-none que hereda de 
                     b <em>HttpServlet </em>
@@ -325,37 +325,37 @@
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
             p.mb-0
-              b getId (), 
+              b #[span.italic getId ()], 
               b-none retorna el identificador que es asignado a la sesión, se utiliza para la identificación de la sesión.
             
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
             p.mb-0
-              b isNew (), 
+              b #[span.italic isNew ()], 
               b-none retorna valor booleano true en caso de que el cliente no tenga una sesión.
             
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
             p.mb-0
-              b setAttribute (), 
+              b #[span.italic setAttribute ()], 
               b-none establece un objeto a la sesión, empleando un nombre explícito.
             
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
             p.mb-0
-              b getAttribute (), 
+              b #[span.italic getAttribute ()], 
               b-none retorna el objeto que fue asignado a la sesión, el cual se identifica con el nombre que le fue asignado.
             
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
             p.mb-0
-              b setInactiveInterval (), 
+              b #[span.italic setInactiveInterval ()], 
               b-none detalla el mayor tiempo que exista entre las peticiones continuas del cliente. 
             
           li 
             i.fas.fa-layer-group.pe-4(style='color: #039BE5')
             p.mb-0 
-              b invalidate (), 
+              b #[span.italic invalidate ()], 
               b-none elimina la sesión actual.
             
       .col-8.col-lg-5.order-1.order-lg-2.mb-4.mb-lg-0
@@ -371,7 +371,7 @@
             figure.mb-4
               img.mt-0(src="@/assets/curso/tema2/comilla.svg", alt="imagen ambiental", style="width: 70px;")
                   
-            p.text-white.mb-4 El método utilizado para obtener la sesión de un usuario es getSession () este método regresa una interfaz de tipo HttpSession, Esta interfaz está dentro del paquete javax. servlet.http y es usada por el contenedor de páginas JSP que permite la creación de una sesión entre el cliente y el servidor.
+            p.text-white.mb-4 El método utilizado para obtener la sesión de un usuario es #[span.italic getSession ()] este método regresa una interfaz de tipo #[span.italic HttpSession], Esta interfaz está dentro del paquete javax. servlet.http y es usada por el contenedor de páginas JSP que permite la creación de una sesión entre el cliente y el servidor.
               
             .floatRight.pb-5.justify-content-center
               p.pe-3.mb-0.text-white 
@@ -395,28 +395,28 @@
               figure
                 img(src='@/assets/curso/tema2/infografia1.png', alt='funcionamiento básico de las sesiones')
                 
-            .tarjeta.color-verdoso.p-3(x="13.6%" y="4%" numero="")
+            .tarjeta.color-verdoso.p-3(x="20%" y="4%" numero="1")
               p.mb-0 Cada uno de estos tres usuarios accede al archivo JSP, el cual crea un objeto 
                 b <em>session </em>
                 b-none único para cada uno de ellos.
               
-            .tarjeta.color-verdoso.p-3(x="58.4%" y="4%" numero="")
+            .tarjeta.color-verdoso.p-3(x="58.4%" y="4%" numero="2")
               p.mb-0 La gráfica también representa cómo estos objetos 
                 b <em>session </em>
                 b-none son guardados en la memoria del servidor. Los mismos, permiten acceder a una serie de métodos que pertenecen a los objetos de tipo 
                 b <em>session.</em>
             
-            .tarjeta.color-verdoso.p-3(x="77.6%" y="18%" numero="")
+            .tarjeta.color-verdoso.p-3(x="77.6%" y="15%" numero="3")
               p.mb-0 El método 
                 b <em>SetAttribute </em>
                 b-none tiene dos atributos (nombre, objeto); donde el objeto es el que se almacenará en la sesión.
               
-            .tarjeta.color-verdoso.p-3(x="77.6%" y="35.8%" numero="")
+            .tarjeta.color-verdoso.p-3(x="77.6%" y="30%" numero="4")
               p.mb-0 Identifique cómo el 
                 b <em>getAttribute </em>
                 b-none devuelve el objeto que se ha almacenado en la sesión.
               
-            .tarjeta.color-verdoso.p-3(x="77.6%" y="52.6%" numero="")
+            .tarjeta.color-verdoso.p-3(x="77.6%" y="50%" numero="5")
               p.mb-0 Por último, observe en la gráfica la representación de cómo el método 
                 b <em>isNew </em>
                 b-none permite comprobar si la 
@@ -609,7 +609,7 @@ export default {
       {
         titulo: '<h5>Datos de transmisión</h5>',
         texto:
-          'Se encarga de leer claramente los datos de transmisión de un cliente(navegador), incluyendo un formulario HTML.',
+          'Se encarga de leer claramente los datos de transmisión de un cliente (navegador), incluyendo un formulario HTML.',
         icono: require('@/assets/curso/tema2/icon1.svg'),
       },
       {
